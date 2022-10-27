@@ -26,16 +26,26 @@
               "angle": 0,
               "id": "6b4f61ea-4123-44fa-9373-aaf2d2a3ce7c",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Dos Login System",
+                  "threatId": "c4d6c425-a08e-4b41-a40d-4b9260cd69e2"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -307,8 +317,8 @@
                 "height": 100
               },
               "position": {
-                "x": 395,
-                "y": 274
+                "x": 407,
+                "y": 252
               },
               "angle": 0,
               "id": "a18a25ff-b5d8-4b7f-8d03-a8e3063fad9a",
@@ -386,7 +396,7 @@
               },
               "position": {
                 "x": 12,
-                "y": 90
+                "y": 131
               },
               "angle": 0,
               "id": "abaddea9-56d6-4a5f-b920-8a6ba683aba7",
@@ -714,8 +724,8 @@
               },
               "vertices": [
                 {
-                  "x": 412,
-                  "y": 135
+                  "x": 392,
+                  "y": 159
                 }
               ],
               "id": "d59acbe7-b0bc-4ed7-9afb-cef7dd0409d9",
@@ -765,8 +775,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.5591491192726635,
-                    "offset": -34.970446012193975
+                    "distance": 0.4133775558427148,
+                    "offset": -3.0320926465367686
                   },
                   "attrs": {
                     "text": {
@@ -1060,22 +1070,32 @@
                 "height": 100
               },
               "position": {
-                "x": 540,
+                "x": 541,
                 "y": 23
               },
               "angle": 0,
               "id": "2807bdfb-cab5-401e-8b5e-53b89798d2f9",
               "z": 48,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Steal Management Report",
+                  "threatId": "cea7b4b0-605a-45be-b840-adb30eebcd35"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log-Report"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1232,11 +1252,88 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 12,
+                "y": 21
+              },
+              "angle": 0,
+              "id": "c95a2344-3bb3-4302-82d7-e170b24cfbaa",
+              "z": 53,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Management"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 584,
+                "y": 21
+              },
+              "target": {
+                "id": "c95a2344-3bb3-4302-82d7-e170b24cfbaa"
+              },
+              "vertices": [
+                {
+                  "x": 444,
+                  "y": 8
+                },
+                {
+                  "x": 271,
+                  "y": 19
+                }
+              ],
+              "id": "31251278-2ebb-447e-bbfe-ee6b6dfeaeb2",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.8064424048095071,
+                    "offset": 10.280810394794152
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "monatlich verschickt",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 54,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 595,
+          "height": 930,
           "width": 1551
         }
       }
