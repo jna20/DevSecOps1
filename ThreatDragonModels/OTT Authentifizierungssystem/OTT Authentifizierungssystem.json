@@ -20,7 +20,7 @@
                 "height": 100
               },
               "position": {
-                "x": 232,
+                "x": 230,
                 "y": 85
               },
               "angle": 0,
@@ -35,7 +35,7 @@
                   "type": "Denial of service",
                   "title": "Dos Login System",
                   "threatId": "c4d6c425-a08e-4b41-a40d-4b9260cd69e2",
-                  "description": "Durch viele Login-Versuche Systemüberlastung",
+                  "description": "Durch viele Login-Versuche Systemüberlastung\nmedium",
                   "mitigation": "begrenzte Fehlversuche: sperren"
                 },
                 {
@@ -43,7 +43,7 @@
                   "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Elevation of privilege",
-                  "description": "Durch SQL injection code einfuegen",
+                  "description": "Durch SQL injection code einfuegen\nhigh",
                   "mitigation": "Eingaben beim Login ueberpruefen/einschraenken",
                   "title": "Sql Injection",
                   "threatId": "cd8a0f25-b6a9-4627-8361-55156727d272"
@@ -82,7 +82,7 @@
                   "modelType": "STRIDE",
                   "type": "Spoofing",
                   "title": "OTT stehlen",
-                  "description": "Angreifer gibt sich als anderer aus mit abgegriffener OTT (abgreifen wenn OTT Nutzer gesendet wird)",
+                  "description": "Angreifer gibt sich als anderer aus mit abgegriffener OTT (abgreifen wenn OTT Nutzer gesendet wird)\nhigh",
                   "threatId": "e2abd2bd-5a58-4c5a-8635-f8f57ec0dbbe",
                   "mitigation": "Übermitteln des OTT über sichereren Übertragungsweg"
                 }
@@ -116,10 +116,10 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Spoofing",
-                  "description": "Angreifer gibt sich als Telefondienstanbieter aus (MITM Angriff)",
+                  "description": "Angreifer gibt sich als Telefondienstanbieter aus (MITM Angriff)\nmedium",
                   "title": "als Telefonanbieter ausgeben",
                   "threatId": "122c78e4-0137-4eb5-bbfc-1163df69c3be",
                   "mitigation": "Kontrollinstanz die überprüft wer zugreift"
@@ -367,7 +367,7 @@
                   "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
-                  "description": "Dos da nicht redundant",
+                  "description": "Dos da nicht redundant\nmedium",
                   "title": "Dos",
                   "threatId": "79363be1-2760-4130-9bfc-16625bf39475",
                   "mitigation": "redundant aufsetzen"
@@ -377,7 +377,7 @@
                   "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
-                  "description": "Informationen werden unverschlüsselt übertragen, können einfach abgegriffen werden",
+                  "description": "Informationen werden unverschlüsselt übertragen, können einfach abgegriffen werden\nmedium",
                   "title": "Telefonnr abgreifen",
                   "threatId": "700403ac-4a32-4fe3-8902-48e1e1300925",
                   "mitigation": "verschlüsselung"
@@ -961,18 +961,18 @@
                   "severity": "Low",
                   "modelType": "STRIDE",
                   "title": "Log-Daten ändern",
-                  "description": "Eingabe falscher Log-Daten, weil Datenbank nicht authentifiziert bei Dateneingaben",
+                  "description": "Eingabe falscher Log-Daten, weil Datenbank nicht authentifiziert bei Dateneingaben\nmedium",
                   "type": "Tampering",
                   "threatId": "62b259ed-865d-491c-9ad5-d0f06cbac5df",
                   "mitigation": "Authentifizierungsverfahren"
                 },
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Repudiation",
                   "title": "Log-Daten löschen",
-                  "description": "durch das Löschen der Log-Daten leugnet der Angreifer für den Angriff verantwortlich zu sein (nicht authentifiziert bei Dateneingaben)",
+                  "description": "durch das Löschen der Log-Daten leugnet der Angreifer für den Angriff verantwortlich zu sein (nicht authentifiziert bei Dateneingaben)\nhigh",
                   "threatId": "4e375289-ef68-4730-a073-38db7c9a989b",
                   "mitigation": "Authentifizierungsverfahren"
                 }
@@ -1165,7 +1165,7 @@
               },
               "position": {
                 "x": 541,
-                "y": 23
+                "y": 24
               },
               "angle": 0,
               "id": "2807bdfb-cab5-401e-8b5e-53b89798d2f9",
@@ -1179,7 +1179,7 @@
                   "type": "Information disclosure",
                   "title": "Steal Management Report",
                   "threatId": "cea7b4b0-605a-45be-b840-adb30eebcd35",
-                  "description": "Report wird signiert, aber nicht verschluesselt",
+                  "description": "Report wird signiert, aber nicht verschluesselt\nje nachdem wv geloggt wird medium/high",
                   "mitigation": "verschluesseln"
                 }
               ],
@@ -1254,7 +1254,7 @@
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Log-Daten einsehen",
-                  "description": "Angreifer greift unbefugt auf Log-Daten zu (keine Verschlüsselung)",
+                  "description": "Angreifer greift unbefugt auf Log-Daten zu (keine Verschlüsselung)\n\nje nachdem was geloggt wird medium/high",
                   "threatId": "e9c9f9a8-e187-4fb6-8ebc-0673a139bd06",
                   "mitigation": "verschlüsseln"
                 }
