@@ -972,7 +972,7 @@
                   "modelType": "STRIDE",
                   "type": "Repudiation",
                   "title": "Log-Daten löschen",
-                  "description": "durch das Löschen der Log-Daten leugnet der Angreifer für den Angriff verantwortlich zu sein",
+                  "description": "durch das Löschen der Log-Daten leugnet der Angreifer für den Angriff verantwortlich zu sein (nicht authentifiziert bei Dateneingaben)",
                   "threatId": "4e375289-ef68-4730-a073-38db7c9a989b",
                   "mitigation": "Authentifizierungsverfahren"
                 }
