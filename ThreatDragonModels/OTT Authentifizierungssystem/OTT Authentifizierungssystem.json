@@ -30,11 +30,23 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "Dos Login System",
-                  "threatId": "c4d6c425-a08e-4b41-a40d-4b9260cd69e2"
+                  "threatId": "c4d6c425-a08e-4b41-a40d-4b9260cd69e2",
+                  "description": "Durch viele Login-Versuche Systemüberlastung",
+                  "mitigation": "begrenzte Fehlversuche: sperren"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "description": "Durch SQL injection code einfuegen",
+                  "mitigation": "Eingaben beim Login ueberpruefen/einschraenken",
+                  "title": "Sql Injection",
+                  "threatId": "cd8a0f25-b6a9-4627-8361-55156727d272"
                 }
               ],
               "attrs": {
@@ -62,16 +74,28 @@
               "angle": 0,
               "id": "a2262b50-d67a-440f-a569-8f79a219b76e",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "OTT stehlen",
+                  "description": "Angreifer gibt sich als anderer aus mit abgegriffener OTT (abgreifen wenn OTT Nutzer gesendet wird)",
+                  "threatId": "e2abd2bd-5a58-4c5a-8635-f8f57ec0dbbe",
+                  "mitigation": "Übermitteln des OTT über sichereren Übertragungsweg"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Allsecure OTT\nService"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -82,22 +106,34 @@
                 "height": 100
               },
               "position": {
-                "x": 581,
-                "y": 339
+                "x": 580,
+                "y": 356
               },
               "angle": 0,
               "id": "f7fcda18-6e2e-43e9-ad29-4677cc3f726f",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "description": "Angreifer gibt sich als Telefondienstanbieter aus (MITM Angriff)",
+                  "title": "als Telefonanbieter ausgeben",
+                  "threatId": "122c78e4-0137-4eb5-bbfc-1163df69c3be",
+                  "mitigation": "Kontrollinstanz die überprüft wer zugreift"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Kundentelefon\nanbieter"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -134,13 +170,14 @@
                 "height": 80
               },
               "position": {
-                "x": 726,
-                "y": 367
+                "x": 748,
+                "y": 370
               },
               "angle": 0,
               "id": "f1fb5133-45be-4213-b36d-6c83bc1693f6",
               "z": 17,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -317,22 +354,44 @@
                 "height": 100
               },
               "position": {
-                "x": 407,
-                "y": 252
+                "x": 402,
+                "y": 261
               },
               "angle": 0,
               "id": "a18a25ff-b5d8-4b7f-8d03-a8e3063fad9a",
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "description": "Dos da nicht redundant",
+                  "title": "Dos",
+                  "threatId": "79363be1-2760-4130-9bfc-16625bf39475",
+                  "mitigation": "redundant aufsetzen"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "Informationen werden unverschlüsselt übertragen, können einfach abgegriffen werden",
+                  "title": "Telefonnr abgreifen",
+                  "threatId": "700403ac-4a32-4fe3-8902-48e1e1300925",
+                  "mitigation": "verschlüsselung"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2-Faktor Authe\nntifizierung"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -731,7 +790,10 @@
               "id": "d59acbe7-b0bc-4ed7-9afb-cef7dd0409d9",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.6508174583868243,
+                    "offset": 11.76996020090802
+                  },
                   "attrs": {
                     "text": {
                       "text": "Erwatete OTT",
@@ -775,8 +837,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.4133775558427148,
-                    "offset": -3.0320926465367686
+                    "distance": 0.33070471238470966,
+                    "offset": -6.66317907008528
                   },
                   "attrs": {
                     "text": {
@@ -849,7 +911,12 @@
               "target": {
                 "id": "6b4f61ea-4123-44fa-9373-aaf2d2a3ce7c"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 312,
+                  "y": 234
+                }
+              ],
               "id": "02170e24-945f-41b6-ab27-caf824aa9600",
               "labels": [
                 {
@@ -881,22 +948,44 @@
                 "height": 80
               },
               "position": {
-                "x": 346,
-                "y": 22
+                "x": 350,
+                "y": 20
               },
               "angle": 0,
               "id": "70e132d1-bbc2-4654-8208-6e8b64825dee",
               "z": 43,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "Log-Daten ändern",
+                  "description": "Eingabe falscher Log-Daten, weil Datenbank nicht authentifiziert bei Dateneingaben",
+                  "type": "Tampering",
+                  "threatId": "62b259ed-865d-491c-9ad5-d0f06cbac5df",
+                  "mitigation": "Authentifizierungsverfahren"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "Log-Daten löschen",
+                  "description": "durch das Löschen der Log-Daten leugnet der Angreifer für den Angriff verantwortlich zu sein",
+                  "threatId": "4e375289-ef68-4730-a073-38db7c9a989b",
+                  "mitigation": "Authentifizierungsverfahren"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log-Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -913,7 +1002,12 @@
               "target": {
                 "id": "70e132d1-bbc2-4654-8208-6e8b64825dee"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 439,
+                  "y": 170
+                }
+              ],
               "id": "12fc1059-dff4-4c4f-b0cd-f5347d8a6ec9",
               "labels": [
                 {
@@ -1080,11 +1174,13 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Steal Management Report",
-                  "threatId": "cea7b4b0-605a-45be-b840-adb30eebcd35"
+                  "threatId": "cea7b4b0-605a-45be-b840-adb30eebcd35",
+                  "description": "Report wird signiert, aber nicht verschluesselt",
+                  "mitigation": "verschluesseln"
                 }
               ],
               "attrs": {
@@ -1150,16 +1246,28 @@
               "angle": 0,
               "id": "afccafb8-5682-42d1-966e-44f8491af164",
               "z": 50,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Log-Daten einsehen",
+                  "description": "Angreifer greift unbefugt auf Log-Daten zu (keine Verschlüsselung)",
+                  "threatId": "e9c9f9a8-e187-4fb6-8ebc-0673a139bd06",
+                  "mitigation": "verschlüsseln"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SIEM-System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
